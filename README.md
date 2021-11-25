@@ -4,7 +4,7 @@
 Using the Semantic Scholar API, this script searches papers with customized queries and post the results to your Slack channel.
 
 ## Background
-Semantic Scholar [1] is a publication search engine. It's features including one-sentence summary of a paper, calculation of influential citations, and more. Semantic Scholar covers multiple fields of research and 
+Semantic Scholar [1] is a publication search engine. It's features including one-sentence summary of a paper, calculation of influential citations, and more. Semantic Scholar covers multiple fields of research and   
 
 Semantic Scholar provides API [3]
 
