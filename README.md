@@ -1,4 +1,4 @@
-# Semantic-Scholar-API-crawler
+# SS_crawler
 
 ## Summary
 Using the Semantic Scholar API, this script searches papers with customized queries and post the results to your Slack channel.
