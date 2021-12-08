@@ -1,9 +1,17 @@
 # SS_crawler
 
-## Summary
+## 0. Summary
 Using the Semantic Scholar API, this script searches papers with customized queries and post the results to your Slack channel.
 
-## Background
+## 1. Quickstart
+2 basic usages:  
+### (i)  One-shot execution  
+
+### (ii) Periodic execution  
+...  
+For details, see 3. Details.
+
+## 2. Background and Motivation
 Semantic Scholar [1] is a publication search engine. It's features including one-sentence summary of a paper, calculation of influential citations, and more. Semantic Scholar covers multiple fields of research and   
 
 Semantic Scholar provides API [3]
