@@ -5,7 +5,7 @@ Using the Semantic Scholar API, this script, `SS_crawler.py` searches scientific
 - python 3.5
 
 # 1. Quickstart
-## (i)  One-shot execution  
+### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
  `$ python SS_crawler.py -o -k your+search+keywords -N 3 `
@@ -15,7 +15,7 @@ options:
 -k: Search keywords concatenated with + sign  
 -N: Number of posted papers per search  
 
-## (ii) Periodic execution  
+### (ii) Periodic execution  
 Simply omit the `-o` option to run periedically at the specified date and time.  
 The best practice is to run the script on a network-connected server such as RaspberryPi.
 
@@ -34,18 +34,18 @@ Utilizing these features, we can automatize the daily literature survey to find 
 # 3. Details   
 To customize the script, modify the header part of the `SS_crawler.py` as follows.  
 
-## 3-1. Modifying the default query list  
+### 3-1. Modifying the default query list  
 
-## 3-2. Slack posting option  
+### 3-2. Slack posting option  
 By default, the `SS_crawler.py` outputs the search results to the console. To improve the readability and searchablility, the results can be posted on a personal Slack channel (or onto any url that you want) via a webhook whose address is specified with the variable `slack_url`. To get the webhook url, see [3].
 
-## 3-3. Classic paper searching option  
+### 3-3. Classic paper searching option  
 In addition to searching with the default queries defined in the `query_list`, SS_crawler.py has an experimental function to find classic papers. To modify the range and time window, change the variable `range_classic`. The default is `np.arange(1935, 2025, 10)`: here, one of the 10-year time windows is randomly chosen to search papers within the time window. Hereafter, the papers searched with the `query_list` are referred as "regular papers" to be distinguished from classic papers.   
 
-## 3-4. Change the default number of papers to be displayed  
+### 3-4. Change the default number of papers to be displayed  
 Modify the variables `Npapers_to_display` and `Nclassic_to_display` for the regular and classic papers, respectively.  
 
-## 3-5. Clear the search log  
+### 3-5. Clear the search log  
 SS_crawler saves the IDs of the papers that are already posted as `.pkl` files. The IDs of the regular papers and classic papers are saved as `published_ss.pkl` and `published_ss_old.pkl`, respectively. To clear the history, simply delete these files. If a specific paper ID must be deleted, the ID needs to be deleted from the `.pkl` file. Note that this function is adapted from the arXiv API crawler found at [4].  
 
 # 4. Recommended usage  
