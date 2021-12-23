@@ -13,11 +13,11 @@ Run once by providing arguments. The usage is:
 options:  
 `-o`: one-shot option  
 `-k`: Search keywords concatenated with + sign  
-`-N`: Number of posted papers per search  
+`-N`: Number of posted papers per search query  
 
 ### (ii) Periodic execution  
 Simply omit the `-o` option to run periedically at the specified date and time.  
-The best practice is to run the script on a network-connected server such as RaspberryPi (see 4. Recommended usage for details).
+The best practice is to run the script on a network-connected server such as RaspberryPi (see 4. Recommended Usage for details).
 
  `$ python SS_crawler.py -k your+search+keywords -N 3 `
 
@@ -35,6 +35,9 @@ Utilizing these features, we can automatize the daily literature survey to find 
 To customize the script, modify the header part of the `SS_crawler.py` as follows.  
 
 ### 3-1. Modifying the default query list  
+Find the vairable `query_list` in the header. Multiple queries can be specified. Words in a query must be concatenated with `+` sign. For example:  
+
+`query_list = ('face+presentation+attack+recognition', 'sequential+probability+ratio+test')`  
 
 ### 3-2. Slack posting option  
 By default, the `SS_crawler.py` outputs the search results to the console. To improve the readability and searchablility, the results can be posted on a personal Slack channel (or onto any url that you want) via a webhook whose address is specified with the variable `slack_url`. To get the webhook url, see [3].
@@ -48,7 +51,7 @@ Modify the variables `Npapers_to_display` and `Nclassic_to_display` for the regu
 ### 3-5. Clear the search log  
 SS_crawler saves the IDs of the papers that are already posted as `.pkl` files. The IDs of the regular papers and classic papers are saved as `published_ss.pkl` and `published_ss_old.pkl`, respectively. To clear the history, simply delete these files. If a specific paper ID must be deleted, the ID needs to be deleted from the `.pkl` file. Note that this function is adapted from the arXiv API crawler found at [4].  
 
-# 4. Recommended usage  
+# 4. Recommended Usage  
 I usually connect a RaspberryPi to the Internet and run `SS_crawler.py` under Linux GNU screen so that closing terminal will not terminate the script. After installing the screen (e.g., with `apt` or `yum`), simply initialize a new screen with:  
 
 `$ screen -S the_name_of_your_screen`
