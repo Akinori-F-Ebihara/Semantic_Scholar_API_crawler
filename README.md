@@ -60,6 +60,6 @@ then run `SS_crawler.py`. For more details, see [5].
 ## 5. References
 [1] https://www.semanticscholar.org   
 [2] https://www.semanticscholar.org/product/api  
-[3] https://api.slack.com/messaging/webhooks
+[3] https://api.slack.com/messaging/webhooks  
 [4] https://github.com/kushanon/oreno-curator/   
-[5] https://www.gnu.org/software/screen/manual/screen.html
+[5] https://www.gnu.org/software/screen/manual/screen.html  
