@@ -10,10 +10,10 @@ Run once by providing arguments. The usage is:
 
  `$ python SS_crawler.py -o -k your+search+keywords -N 3 `
 
-options:
--o: one-shot option  
--k: Search keywords concatenated with + sign  
--N: Number of posted papers per search  
+options:  
+`-o`: one-shot option  
+`-k`: Search keywords concatenated with + sign  
+`-N`: Number of posted papers per search  
 
 ### (ii) Periodic execution  
 Simply omit the `-o` option to run periedically at the specified date and time.  
