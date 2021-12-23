@@ -7,7 +7,6 @@ Using the Semantic Scholar API, this script searches scientific papers with cust
 - python 3.5
 
 ## 1. Quickstart
-2 basic usages:  
 ### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
@@ -19,11 +18,12 @@ options:
 -N: Number of posted papers per search  
 
 ### (ii) Periodic execution  
-Run periedically at the specified date and time.
+Simply omit the `-o` option to run periedically at the specified date and time.
 Best practice is to run the script on a network-connected server such as RaspberryPi.
 
  `python SS_crawler.py -k your+keywords -N 3 `
 
+To modify the date, change the variable at the header of the `SS_crawler.py`.
 See 3. Details for more advanced options.
 
 ## 2. Background and Motivation
