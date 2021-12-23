@@ -39,11 +39,13 @@ Semantic Scholar [1] is a machine-learning assisted publication search engine. T
 ### 3-2. Slack posting option  
 
 ### 3-3. Classic paper searching option  
-In addition to searching with the default queries defined in the `query_list`, SS_crawler.py has 
-Hereafter, the papers searched with the `query_list` are referred as regular papers to be distinguished from classic papers.   
+In addition to searching with the default queries defined in the `query_list`, SS_crawler.py has an experimental function to find classic papers.  
+To modify the range and time window, change the variable `range_classic`.  
+The default is `np.arange(1935, 2025, 10)`: here, one of the 10-year time windows is randomly chosen to search papers within the time window.  
+Hereafter, the papers searched with the `query_list` are referred as "regular papers" to be distinguished from classic papers.   
 
-### 3-4. Default number of papers to be displayed  
-Modify the variables 
+### 3-4. Change the default number of papers to be displayed  
+Modify the variables `Npapers_to_display` and `Nclassic_to_display` for the regular and classic papers, respectively.  
 
 ### 3-5. Clear the search log  
 SS_crawler saves the IDs of the papers that are already posted as `.pkl` files.  
