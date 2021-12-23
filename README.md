@@ -57,7 +57,7 @@ then run `SS_crawler.py`. For more details, see [5].
 
 # 5. References
 [1] <a href='https://www.semanticscholar.org'>Semantic Scholar</a>  
-[2] <a href='https://www.semanticscholar.org/product/api'>API|Semantic Scholar</a>  
+[2] <a href='https://www.semanticscholar.org/product/api'>API | Semantic Scholar</a>  
 [3] <a href='https://api.slack.com/messaging/webhooks'>Sending messages using Incoming Webhooks</a>  
-[4] <a href='https://github.com/kushanon/oreno-curator/'>kushanon/oreno-curator</a>  
+[4] <a href='https://github.com/kushanon/oreno-curator/'>github.com/kushanon/oreno-curator</a>  
 [5] <a href='https://www.gnu.org/software/screen/manual/screen.html'>Screen User's Manual</a>  
