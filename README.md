@@ -10,7 +10,7 @@ Using the Semantic Scholar API, this script searches scientific papers with cust
 ### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
- `python SS_crawler.py -o -k your+search+keywords -N 3 `
+ `$ python SS_crawler.py -o -k your+search+keywords -N 3 `
 
 options:
 -o: one-shot option  
@@ -21,7 +21,7 @@ options:
 Simply omit the `-o` option to run periedically at the specified date and time.  
 The best practice is to run the script on a network-connected server such as RaspberryPi.
 
- `python SS_crawler.py -k your+search+keywords -N 3 `
+ `$ python SS_crawler.py -k your+search+keywords -N 3 `
 
 To modify the date and time, change the variable `day_off` and `posting_hour` at the header of the `SS_crawler.py`. See 3. Details for more advanced options.
 
@@ -51,7 +51,11 @@ Modify the variables `Npapers_to_display` and `Nclassic_to_display` for the regu
 SS_crawler saves the IDs of the papers that are already posted as `.pkl` files. The IDs of the regular papers and classic papers are saved as `published_ss.pkl` and `published_ss_old.pkl`, respectively. To clear the history, simply delete these files. If a specific paper ID must be deleted, the ID needs to be deleted from the `.pkl` file. Note that this function is adapted from the arXiv API crawler found at [3].  
 
 ## 4. Recommended usage  
-I personally hook up a RaspberryPi to the Internet and run `SS_crawler.py` under Linux GNU screen so that closing terminal will not terminate the script.
+I personally hook up a RaspberryPi to the Internet and run `SS_crawler.py` under Linux GNU screen so that closing terminal will not terminate the script. After installing the screen, simply initialize a new screen with  
+
+`$ screen -S the_name_of_your_screen`
+
+and run `SS_crawler.py`.
 
 ## References
 [1] https://www.semanticscholar.org   
