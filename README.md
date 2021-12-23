@@ -2,13 +2,16 @@
 
 ## 0. Summary
 Using the Semantic Scholar API, this script searches scientific papers with customized queries and post the results to your Slack channel.
+### Tested environments
+- Mac OSX / RaspberryPi
+- python 3.5
 
 ## 1. Quickstart
 2 basic usages:  
 ### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
-python SS_crawler.py -o -k face+recognition -N 3  
+ `python SS_crawler.py -o -k face+recognition -N 3 `
 
 options:
 -o: one-shot option  
