@@ -23,7 +23,7 @@ The best practice is to run the script on a network-connected server such as Ras
 
  `python SS_crawler.py -k your+keywords -N 3 `
 
-To modify the date, change the variable at the header of the `SS_crawler.py`.  
+To modify the date and time, change the variable `day_off` and `posting_hour` at the header of the `SS_crawler.py`.  
 See 3. Details for more advanced options.
 
 ## 2. Background and Motivation
@@ -34,6 +34,11 @@ Semantic Scholar [1] is a machine-learning assisted publication search engine. T
 
 
 ## 3. Details  
+### 3-1. Modifying the default query list
+### 3-2. Slack posting option
+### 3-3. Classic paper searching option
+### 3-4. Default number of papers to be displayed
+
 
 ## References
 [1] https://www.semanticscholar.org  
