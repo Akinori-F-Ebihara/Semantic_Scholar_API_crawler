@@ -55,9 +55,10 @@ I usually connect a RaspberryPi to the Internet and run `SS_crawler.py` under Li
 
 `$ screen -S the_name_of_your_screen`
 
-then run `SS_crawler.py`.
+then run `SS_crawler.py`. For more details, see [4].
 
 ## References
 [1] https://www.semanticscholar.org   
 [2] https://www.semanticscholar.org/product/api  
 [3] https://github.com/kushanon/oreno-curator/   
+[4] https://www.gnu.org/software/screen/manual/screen.html
