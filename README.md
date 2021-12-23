@@ -51,7 +51,7 @@ Modify the variables `Npapers_to_display` and `Nclassic_to_display` for the regu
 SS_crawler saves the IDs of the papers that are already posted as `.pkl` files. The IDs of the regular papers and classic papers are saved as `published_ss.pkl` and `published_ss_old.pkl`, respectively. To clear the history, simply delete these files. If a specific paper ID must be deleted, the ID needs to be deleted from the `.pkl` file. Note that this function is adapted from the arXiv API crawler found at [3].  
 
 ## 4. Recommended usage  
-I usually connect a RaspberryPi to the Internet and run `SS_crawler.py` under Linux GNU screen so that closing terminal will not terminate the script. After installing the screen, simply initialize a new screen with:  
+I usually connect a RaspberryPi to the Internet and run `SS_crawler.py` under Linux GNU screen so that closing terminal will not terminate the script. After installing the screen (e.g., with `apt` or `yum`), simply initialize a new screen with:  
 
 `$ screen -S the_name_of_your_screen`
 
