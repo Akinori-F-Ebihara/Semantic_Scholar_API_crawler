@@ -56,7 +56,7 @@ I usually connect a RaspberryPi to the Internet and run `SS_crawler.py` under Li
 then run `SS_crawler.py`. For more details, see [5].
 
 # 5. References
-[1] https://www.semanticscholar.org   
+[1] <a href='https://www.semanticscholar.org'>semanticscholar.org</a>
 [2] https://www.semanticscholar.org/product/api  
 [3] https://api.slack.com/messaging/webhooks  
 [4] https://github.com/kushanon/oreno-curator/   
