@@ -35,7 +35,7 @@ Utilizing these features, we can automatize the daily literature survey to find 
 To customize the script, modify the header part of the `SS_crawler.py` as follows.  
 
 ### 3-1. Modifying the default query list  
-Find the vairable `query_list` in the header. Multiple queries can be specified. Words in a query must be concatenated with `+` sign. For example:  
+Find the vairable `query_list` in the header. Multiple queries can be specified. Words in a query must be concatenated with `+` signs. For example:  
 
 `query_list = ('face+presentation+attack+recognition', 'sequential+probability+ratio+test')`  
 
