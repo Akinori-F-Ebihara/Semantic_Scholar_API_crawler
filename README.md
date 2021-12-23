@@ -11,7 +11,7 @@ Using the Semantic Scholar API, this script searches scientific papers with cust
 ### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
- `python SS_crawler.py -o -k face+recognition -N 3 `
+ `python SS_crawler.py -o -k your+keywords -N 3 `
 
 options:
 -o: one-shot option  
@@ -19,8 +19,12 @@ options:
 -N: Number of posted papers per search  
 
 ### (ii) Periodic execution  
-...  
-For details, see 3. Details.
+Run periedically at the specified date and time.
+Best practice is to run the script on a network-connected server such as RaspberryPi.
+
+ `python SS_crawler.py -k your+keywords -N 3 `
+
+See 3. Details for more advanced options.
 
 ## 2. Background and Motivation
 Semantic Scholar [1] is a publication search engine. It's features including one-sentence summary of a paper, calculation of influential citations, and more. Semantic Scholar covers multiple fields of research and   
