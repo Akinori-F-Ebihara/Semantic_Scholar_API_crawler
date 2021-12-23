@@ -10,7 +10,7 @@ Using the Semantic Scholar API, this script searches scientific papers with cust
 ### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
- `python SS_crawler.py -o -k your+keywords -N 3 `
+ `python SS_crawler.py -o -k your+search+keywords -N 3 `
 
 options:
 -o: one-shot option  
@@ -21,7 +21,7 @@ options:
 Simply omit the `-o` option to run periedically at the specified date and time.  
 The best practice is to run the script on a network-connected server such as RaspberryPi.
 
- `python SS_crawler.py -k your+keywords -N 3 `
+ `python SS_crawler.py -k your+search+keywords -N 3 `
 
 To modify the date and time, change the variable `day_off` and `posting_hour` at the header of the `SS_crawler.py`.  
 See 3. Details for more advanced options.
