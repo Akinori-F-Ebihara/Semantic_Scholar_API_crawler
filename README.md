@@ -1,7 +1,7 @@
 # SS_crawler
 
 ## 0. Summary
-Using the Semantic Scholar API, this script searches scientific papers with customized queries and post the results to your Slack channel.
+Using the Semantic Scholar API, this script searches scientific papers with customized queries.
 ### Tested environments
 - Mac OSX / RaspberryPi
 - python 3.5
@@ -27,12 +27,15 @@ To modify the date, change the variable at the header of the `SS_crawler.py`.
 See 3. Details for more advanced options.
 
 ## 2. Background and Motivation
-Semantic Scholar [1] is a publication search engine. It's features including one-sentence summary of a paper, calculation of influential citations, and more. Semantic Scholar covers multiple fields of research and   
+Semantic Scholar [1] is a machine-learning assisted publication search engine. The advantages of using the Semantic Scholar include but not limited to:
+- Search across journal/conference papers in addition to preprint servers (e.g., arXiv, bioRxiv, and PsyArXiv).
+- Each paper comes with a list of articles that are highly influenced (thus, highly related) by the paper.
+- Recent-updated Semantic Scholar API [2] provides an easy access to the search engine with a customized code.
 
-Semantic Scholar provides API [3]
+
+## 3. Details  
 
 ## References
 [1] https://www.semanticscholar.org  
-[2]  
-[3] https://www.semanticscholar.org/product/api  
+[2] https://www.semanticscholar.org/product/api 
 [4] https://github.com/kushanon/oreno-curator/  
