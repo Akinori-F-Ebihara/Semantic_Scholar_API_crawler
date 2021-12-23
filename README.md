@@ -17,7 +17,7 @@ options:
 
 ### (ii) Periodic execution  
 Simply omit the `-o` option to run periedically at the specified date and time.  
-The best practice is to run the script on a network-connected server such as RaspberryPi.
+The best practice is to run the script on a network-connected server such as RaspberryPi (see 4. Recommended usage for details).
 
  `$ python SS_crawler.py -k your+search+keywords -N 3 `
 
