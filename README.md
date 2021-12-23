@@ -33,14 +33,18 @@ Semantic Scholar [1] is a machine-learning assisted publication search engine. T
 - Recent-updated Semantic Scholar API [2] provides an easy access to the search engine with a customized code.
 
 
-## 3. Details  
-### 3-1. Modifying the default query list
-### 3-2. Slack posting option
-### 3-3. Classic paper searching option
-### 3-4. Default number of papers to be displayed
-
+## 3. Details   
+### 3-1. Modifying the default query list  
+### 3-2. Slack posting option  
+### 3-3. Classic paper searching option  
+### 3-4. Default number of papers to be displayed  
+### 3-5. Clear the search log  
+SS_crawler saves the IDs of the papers that are already posted as `.pkl` files.  
+The IDs of the papers and classic papers are saved as `published_ss.pkl` and `published_ss_old.pkl`, respectively.  
+To clear the history, simply delete these files. If a specific paper ID must be deleted, the ID needs to be deleted from the `.pkl` file.
+Note that this function is adapted from the arXiv API crawler found at [3].  
 
 ## References
-[1] https://www.semanticscholar.org  
-[2] https://www.semanticscholar.org/product/api 
-[4] https://github.com/kushanon/oreno-curator/  
+[1] https://www.semanticscholar.org   
+[2] https://www.semanticscholar.org/product/api  
+[3] https://github.com/kushanon/oreno-curator/   
