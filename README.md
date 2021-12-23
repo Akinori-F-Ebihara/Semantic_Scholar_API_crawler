@@ -28,20 +28,27 @@ See 3. Details for more advanced options.
 
 ## 2. Background and Motivation
 Semantic Scholar [1] is a machine-learning assisted publication search engine. The advantages of using the Semantic Scholar include but not limited to:  
-- Search across journal/conference papers in addition to preprint servers (e.g., arXiv, bioRxiv, and PsyArXiv).
-- Each paper comes with a list of articles that are highly influenced (thus, highly related) by the paper.
-- Recent-updated Semantic Scholar API [2] provides an easy access to the search engine with a customized code.
+- Search across journal/conference papers in addition to preprint servers (e.g., arXiv, bioRxiv, and PsyArXiv).  
+- Each paper comes with a list of articles that are highly influenced (thus, highly related) by the paper.  
+- Recent-updated Semantic Scholar API [2] provides an easy access to the search engine with a customized code.  
 
 
 ## 3. Details   
 ### 3-1. Modifying the default query list  
+
 ### 3-2. Slack posting option  
+
 ### 3-3. Classic paper searching option  
+In addition to searching with the default queries defined in the `query_list`, SS_crawler.py has 
+Hereafter, the papers searched with the `query_list` are referred as regular papers to be distinguished from classic papers.   
+
 ### 3-4. Default number of papers to be displayed  
+Modify the variables 
+
 ### 3-5. Clear the search log  
 SS_crawler saves the IDs of the papers that are already posted as `.pkl` files.  
-The IDs of the papers and classic papers are saved as `published_ss.pkl` and `published_ss_old.pkl`, respectively.  
-To clear the history, simply delete these files. If a specific paper ID must be deleted, the ID needs to be deleted from the `.pkl` file.
+The IDs of the regular papers and classic papers are saved as `published_ss.pkl` and `published_ss_old.pkl`, respectively.  
+To clear the history, simply delete these files. If a specific paper ID must be deleted, the ID needs to be deleted from the `.pkl` file.  
 Note that this function is adapted from the arXiv API crawler found at [3].  
 
 ## References
