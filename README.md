@@ -43,7 +43,9 @@ Find the vairable `query_list` in the header. Multiple queries can be specified.
 By default, the `SS_crawler.py` outputs the search results to the console. To improve the readability and searchablility, the results can be posted on a personal Slack channel (or onto any url that you want) via a webhook whose address is specified with the variable `slack_url`. To get the webhook url, see [3].
 
 ### 3-3. Classic paper searching option  
-In addition to searching with the default queries defined in the `query_list`, SS_crawler.py has an experimental function to find classic papers. To modify the range and time window, change the variable `range_classic`. The default is `np.arange(1935, 2025, 10)`: here, one of the 10-year time windows is randomly chosen to search papers within the time window. Hereafter, the papers searched with the `query_list` are referred as "regular papers" to be distinguished from classic papers.   
+In addition to searching with the default queries defined in the `query_list`, SS_crawler.py has an experimental function to find classic papers. Reading classic papers is educational: we can learn what papers have had what impact on future researches (and simply enjoyable). Semantic Scholar help visualizing the impact with the influential papers list, suitable for searching classics.  
+
+Modify `classic_query_list` to define queries for classic papers. I usually set queries more abstract than ones in `query_list`. To modify the range and time window, change the variable `range_classic`. The default is `np.arange(1935, 2025, 10)`: here, one of the 10-year time windows is randomly chosen to search papers within the time window. Hereafter, the papers searched with the `query_list` are referred as "regular papers" to be distinguished from classic papers.   
 
 ### 3-4. Change the default number of papers to be displayed  
 Modify the variables `Npapers_to_display` and `Nclassic_to_display` for the regular and classic papers, respectively.  
