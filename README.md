@@ -1,12 +1,12 @@
 # SS_crawler
 
 ## 0. Summary
-Using the Semantic Scholar API, this script searches papers with customized queries and post the results to your Slack channel.
+Using the Semantic Scholar API, this script searches scientific papers with customized queries and post the results to your Slack channel.
 
 ## 1. Quickstart
 2 basic usages:  
 ### (i)  One-shot execution  
-By providing arguments, you can conduct one-shot search. The usage is:  
+Run once by providing arguments. The usage is:  
 
 python SS_crawler.py -o -k face+recognition -N 3  
 
@@ -14,6 +14,7 @@ options:
 -o: one-shot option  
 -k: Search keywords concatenated with + sign  
 -N: Number of posted papers per search  
+
 ### (ii) Periodic execution  
 ...  
 For details, see 3. Details.
