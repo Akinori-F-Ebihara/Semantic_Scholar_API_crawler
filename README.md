@@ -18,16 +18,16 @@ options:
 -N: Number of posted papers per search  
 
 ### (ii) Periodic execution  
-Simply omit the `-o` option to run periedically at the specified date and time.
-Best practice is to run the script on a network-connected server such as RaspberryPi.
+Simply omit the `-o` option to run periedically at the specified date and time.  
+The best practice is to run the script on a network-connected server such as RaspberryPi.
 
  `python SS_crawler.py -k your+keywords -N 3 `
 
-To modify the date, change the variable at the header of the `SS_crawler.py`.
+To modify the date, change the variable at the header of the `SS_crawler.py`.  
 See 3. Details for more advanced options.
 
 ## 2. Background and Motivation
-Semantic Scholar [1] is a machine-learning assisted publication search engine. The advantages of using the Semantic Scholar include but not limited to:
+Semantic Scholar [1] is a machine-learning assisted publication search engine. The advantages of using the Semantic Scholar include but not limited to:  
 - Search across journal/conference papers in addition to preprint servers (e.g., arXiv, bioRxiv, and PsyArXiv).
 - Each paper comes with a list of articles that are highly influenced (thus, highly related) by the paper.
 - Recent-updated Semantic Scholar API [2] provides an easy access to the search engine with a customized code.
