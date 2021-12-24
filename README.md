@@ -8,18 +8,18 @@ Using the Semantic Scholar API, this script, `SS_crawler.py` searches scientific
 ### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
- `$ python SS_crawler.py -o -k your+search+keywords -N 3 `
+ `$ python SS_crawler.py -o -q your+favorite search+keywords -N 3 `
 
 options:  
 `-o`: one-shot option  
-`-k`: Search keywords concatenated with + sign  
+`-q`: Search query words concatenated with + sign. Queries must be separated with space.  
 `-N`: Number of posted papers per search query  
 
 ### (ii) Periodic execution  
 Simply omit the `-o` option to run periedically at the specified date and time.  
 The best practice is to run the script on a network-connected server such as RaspberryPi (see 4. Recommended Usage for details).
 
- `$ python SS_crawler.py -k your+search+keywords -N 3 `
+ `$ python SS_crawler.py -q your+favorite search+keywords -N 3 `
 
 To modify the date and time, change the variable `day_off` and `posting_hour` at the header of the `SS_crawler.py`. See 3. Details for more advanced options.
 
@@ -45,7 +45,9 @@ By default, the `SS_crawler.py` outputs the search results to the console. To im
 ### 3-3. Classic paper searching option  
 In addition to searching with the default queries defined in the `query_list`, SS_crawler.py has an experimental function to find classic papers. Reading classic papers is educational: we can learn what papers have had what impact on future researches (and simply enjoyable). Semantic Scholar help visualizing the impact with the influential papers list, suitable for searching classics.  
 
-Modify `classic_query_list` to define queries for classic papers. I usually set queries more abstract than ones in `query_list`. To modify the range and time window, change the variable `range_classic`. The default is `np.arange(1935, 2025, 10)`: here, one of the 10-year time windows is randomly chosen to search papers within the time window. Hereafter, the papers searched with the `query_list` are referred as "regular papers" to be distinguished from classic papers.   
+To activate the classic paper searching option, set the `ifClassic` variable to `True` at the header. On the one-shot execution, use `-c` option together with `-o`.
+
+Modify `classic_query_list` to define queries for classic papers. Instead of searching every query, one of the query from the `classic_query_list` will be randomly chosen for a search. I usually set queries more abstract than ones in `query_list`. To modify the range and time window, change the variable `range_classic`. The default is `np.arange(1935, 2025, 10)`: here, one of the 10-year time windows is randomly chosen to search papers within the time window. Hereafter, the papers searched with the `query_list` are referred as "regular papers" to be distinguished from classic papers.   
 
 ### 3-4. Change the default number of papers to be displayed  
 Modify the variables `Npapers_to_display` and `Nclassic_to_display` for the regular and classic papers, respectively.  
