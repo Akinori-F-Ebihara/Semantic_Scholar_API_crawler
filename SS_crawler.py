@@ -18,7 +18,7 @@ import calendar
 import argparse
 # import pdb # for debug
 
-#------------------------USER DEFINED PARAMETERS START-----------------------------------
+#-------------------[HEADER] USER DEFINED PARAMETERS START-----------------------------------
 # Slack API url to your channel. Modify here!
 slack_url = ''
 
@@ -57,7 +57,7 @@ posting_hour = 7
 # If you have kid(s), shouldn't work on weekends perhaps
 day_off = ('Tuesday', 'Thursday', 'Saturday', 'Sunday')
 
-#------------------------USER DEFINED PARAMETERS START------------------------------------
+#------------------[HEADER] USER DEFINED PARAMETERS END------------------------------------
 
 
 def generate_ss_url(ss_url_, query_, fields_, batch_size_, start_):

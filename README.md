@@ -1,5 +1,5 @@
 # 0. Summary
-Using the Semantic Scholar API, this script, `SS_crawler.py` searches scientific papers with customized queries.
+Using the Semantic Scholar API, this script, `SS_crawler.py`, searches scientific papers with customized queries.
 ### Tested environments
 - Mac OSX / RaspberryPi
 - python 3.5
@@ -12,24 +12,24 @@ Run once by providing arguments. The usage is:
  `$ python SS_crawler.py -o -q your+favorite search+keywords -N 3 `
 
 options:  
-`-o`: one-shot option  
-`-q`: Search query words concatenated with + sign. Queries must be separated with space.  
+`-o`: One-shot option  
+`-q`: Search query words concatenated with + sign. Multiple queries must be separated with space.  
 `-N`: Number of posted papers per search query  
 
 ### (ii) Periodic execution  
-Simply omit the `-o` option to run periedically at the specified date and time.  
+Omit the `-o` option to run periodically at the specified date and time.  
 The best practice is to run the script on a network-connected server such as RaspberryPi (see 4. Recommended Usage for details).
 
  `$ python SS_crawler.py -q your+favorite search+keywords -N 3 `
 
-To modify the date and time, change the variable `day_off` and `posting_hour` at the header of the `SS_crawler.py`. See 3. Details for more advanced options.
+To modify the date and time of post, change the variable `day_off` and `posting_hour` at the header of the `SS_crawler.py`. See 3. Details for more advanced options.
 
 
 # 2. Background and Motivation
-Semantic Scholar [1] is a machine-learning assisted publication search engine. The advantages of using the Semantic Scholar include but not limited to:  
+Semantic Scholar [1] is a machine-learning-assisted publication search engine. The advantages of using the Semantic Scholar include but are not limited to:  
 - Search across journal/conference papers in addition to preprint servers (e.g., arXiv, bioRxiv, and PsyArXiv).  
-- Each paper comes with a list of articles that are highly influenced (thus, highly related) by the paper.  
-- Recent-updated Semantic Scholar API [2] provides an easy access to the search engine with a customized code.  
+- Each paper comes with a list of highly influenced articles (thus, highly related) by the paper.   
+- Recent-updated Semantic Scholar API [2] provides easy access to the search engine with a customized code.  
 
 Utilizing these features, we can automatize the daily literature survey to find papers that are highly relevant to your work. I hope your research will benefit from the `SS_cralwer.py`.
 
