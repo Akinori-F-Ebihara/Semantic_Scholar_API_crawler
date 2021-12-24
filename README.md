@@ -68,7 +68,7 @@ then run `SS_crawler.py`. For more details, see [5].
 
 
 # 5. Example Result
-`python3 SS_crawler_ver1.py -o -q -q mixed+selectivity+nature -N 1`  
+`python3 SS_crawler_ver1.py -o -q mixed+selectivity+nature -N 1`  
 
 ![Slack example screenshot](./Slack_example_screenshot.png)  
 
