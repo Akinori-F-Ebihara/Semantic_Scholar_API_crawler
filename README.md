@@ -1,11 +1,12 @@
 # 0. Summary
-Using the Semantic Scholar API, this script, `SS_crawler.py`, searches scientific papers with customized queries.
+Using the Semantic Scholar API, this script, `SS_crawler.py`, searches scientific papers with customized queries.  
+
 ### Tested environments
-- Mac OSX / RaspberryPi
-- python 3.5
+- MacBook Pro 2019 / Mac OSX 12.0.1 (Monterey) / python 3.8.12
+- RaspberryPi / Raspbian 10 (buster) / python 3.7.3
 
 
-# 1. Quickstart
+# 1. Quickstart  
 ### (i)  One-shot execution  
 Run once by providing arguments. The usage is:  
 
