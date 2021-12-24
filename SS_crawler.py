@@ -219,7 +219,6 @@ if __name__ == "__main__":
     parser.add_argument('-q', '--query', nargs='*')
     parser.add_argument('-N', '--Npapers', type=int, default=1)
     parser.add_argument('-o', '--once', action='store_true')
-    parser.add_argument('-c', '--classic', action='store_true')
     args = parser.parse_args()
 
     # overwrite parameters if provided
@@ -229,8 +228,6 @@ if __name__ == "__main__":
         Npapers_to_display = args.Npapers
     if args.once:
         ifClassic = False
-    if args.classic:
-        ifClassic = True
         
     # load the list of published papers to avoid duplication
     if os.path.exists("published_ss.pkl"):
